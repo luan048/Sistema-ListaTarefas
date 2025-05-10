@@ -1,0 +1,14 @@
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\bin\Debug\net9.0\Sistema-ListaTarefas.exe
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\bin\Debug\net9.0\Sistema-ListaTarefas.deps.json
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\bin\Debug\net9.0\Sistema-ListaTarefas.runtimeconfig.json
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\bin\Debug\net9.0\Sistema-ListaTarefas.dll
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\bin\Debug\net9.0\Sistema-ListaTarefas.pdb
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.AssemblyInfoInputs.cache
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.AssemblyInfo.cs
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.csproj.CoreCompileInputs.cache
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.dll
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\refint\Sistema-ListaTarefas.dll
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.pdb
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.genruntimeconfig.cache
+C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\ref\Sistema-ListaTarefas.dll
