@@ -19,7 +19,15 @@ class ToDoList
         Console.WriteLine("[3] - Atualizar Tarefa Cadastrada");
         Console.WriteLine("[4] - Excluir Tarefa");
         Console.WriteLine("[5] - Encerrar Programa");
-        int opcao = int.Parse(Console.ReadLine());
+        string entrada = Console.ReadLine();
+
+        // Tratamento de erro caso o usuário digite uma entrada diferente do tipo int
+        if(!int.TryParse(entrada, out int opcao)) {
+            Console.WriteLine("Entrada inválida. Tente novamente e digite um número...");
+            Thread.Sleep(1500);
+            GerenciadorTarefas();
+            return;
+        }
 
         switch (opcao) {
             case 1: // Cadastra Tarefa
@@ -103,9 +111,16 @@ class ToDoList
         }
 
         Console.Write("Digite o id da tarefa que você deseja atualizar: ");
-        int idProjeto = int.Parse(Console.ReadLine());
+        string entrada = Console.ReadLine();
 
-        int index = list.FindIndex(t => t.Item1 == idProjeto); // Esta variável está armazenando todo o elemento que o id seja: == idProjeto; dentro de list
+        if(!int.TryParse(entrada, out int idProjeto)) {
+            Console.WriteLine("ID inválido. Digite o NÚMERO do ID.");
+            Thread.Sleep(1000);
+            AtualizaTarefa();
+            return;
+        }
+
+        int index = list.FindIndex(t => t.Item1 == idProjeto); // Esta variável está armazenando todo o elemento que o id seja: == idProjeto que está dentro de list
         if(index == -1) { // Significa que o id não foi encontrado na list
             Console.WriteLine("Tarefa não encontrada. Tente novamente.");
             Thread.Sleep(1000);
@@ -134,7 +149,14 @@ class ToDoList
         }
 
         Console.Write("Digite o id da tarefa que você deseja excluir: ");
-        int idProjeto = int.Parse(Console.ReadLine());
+        string entrada = Console.ReadLine();
+
+        if(!int.TryParse(entrada, out int idProjeto)) {
+            Console.WriteLine("ID inválido. Digite o NÚMERO do ID.");
+            Thread.Sleep(1000);
+            ExcluiTarefa();
+            return;
+        }
 
         var tarefaParaRemover = list.FirstOrDefault(t => t.Item1 == idProjeto);
         if(tarefaParaRemover == default) {
