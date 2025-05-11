@@ -72,10 +72,31 @@ class ToDoList
 
         list.Add(Tuple.Create(idTarefa, descricaoTarefa));
         idTarefa++;
-        Console.WriteLine("Tarefa adicionada a lista com sucesso!");
-        Console.WriteLine("Você será encaminhado ao home.");
-        Thread.Sleep(1500);
-        GerenciadorTarefas();
+        Console.WriteLine("Tarefa adicionada a lista com sucesso! O que mais você deseja fazer?");
+        Console.WriteLine("[1] - Voltar ao Home");
+        Console.WriteLine("[2] - Cadastrar mais tarefas");
+        string entrada = Console.ReadLine();
+
+        if(!int.TryParse(entrada, out int opcao)) {
+            Console.WriteLine("Entrada inválida. Você será redirecionado ao Home...");
+            Thread.Sleep(1500);
+            GerenciadorTarefas();
+            return;
+        }
+
+        switch(opcao) {
+            case 1:
+                GerenciadorTarefas();
+                break;
+            case 2:
+                CadastrarTarefa();
+                break;
+            default :
+                Console.WriteLine("Entrada inválida. Você será redirecionado ao Home...");
+                Thread.Sleep(1500);
+                GerenciadorTarefas();
+                break;
+        }
     }
 
     static void ListaTarefa() {
@@ -96,9 +117,31 @@ class ToDoList
             Console.WriteLine($"Tarefa {id}: {tarefa}");
         }
 
-        Console.WriteLine("Listagem completa. Você será redirecionado ao home.");
-        Thread.Sleep(2000);
-        GerenciadorTarefas();
+        Console.WriteLine("Listagem completa. O que mais você deseja fazer?");
+        Console.WriteLine("[1] - Voltar ao Home");
+        Console.WriteLine("[2] - Encerrar programa");
+        string entrada = Console.ReadLine();
+
+        if(!int.TryParse(entrada, out int opcao)) {
+            Console.WriteLine("Entrada inválida. Você será redirecionado ao Home...");
+            Thread.Sleep(1500);
+            GerenciadorTarefas();
+            return;
+        }
+
+        switch(opcao) {
+            case 1:
+                GerenciadorTarefas();
+                break;
+            case 2:
+                EncerrarPrograma();
+                break;
+            default:
+                Console.WriteLine("Entrada inválida. Você será redirecionado ao Home...");
+                Thread.Sleep(1500);
+                GerenciadorTarefas();
+                break;
+        }
     }
 
     static void AtualizaTarefa() {
