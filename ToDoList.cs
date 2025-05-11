@@ -67,14 +67,13 @@ class ToDoList
         Console.WriteLine("Tarefa adicionada a lista com sucesso!");
         Console.WriteLine("Você será encaminhado ao home.");
         Thread.Sleep(1500);
-
         GerenciadorTarefas();
     }
 
     static void ListaTarefa() {
 
         if(list.Count == 0) {
-            Console.WriteLine("Ainda sem tarefas. Cadastre uma tarefa para visualizar");
+            Console.WriteLine("Ainda sem tarefas. Cadastre uma tarefa para visualizar.");
             Thread.Sleep(1500);
 
             GerenciadorTarefas();
@@ -84,29 +83,57 @@ class ToDoList
         Console.WriteLine("Inciando listagem dos elementos...");
         Thread.Sleep(1500);
 
+        Console.WriteLine(" ");
         foreach((int id, string tarefa) in list) {
             Console.WriteLine($"Tarefa {id}: {tarefa}");
         }
 
         Console.WriteLine("Listagem completa. Você será redirecionado ao home.");
         Thread.Sleep(2000);
-
         GerenciadorTarefas();
     }
 
     static void AtualizaTarefa() {
-    }
-
-    static void ExcluiTarefa() {
         if(list.Count == 0) {
-            Console.WriteLine("Ainda sem tarefas. Cadastre uma tarefa para excluir");
+            Console.WriteLine("Ainda sem tarefas. Cadastre uma tarefa para atualizar.");
             Thread.Sleep(1500);
 
             GerenciadorTarefas();
             return;
         }
 
-        Console.Write("Digite qual o id da tarefa que você deseja excluir: ");
+        Console.Write("Digite o id da tarefa que você deseja atualizar: ");
+        int idProjeto = int.Parse(Console.ReadLine());
+
+        int index = list.FindIndex(t => t.Item1 == idProjeto); // Esta variável está armazenando todo o elemento que o id seja: == idProjeto; dentro de list
+        if(index == -1) { // Significa que o id não foi encontrado na list
+            Console.WriteLine("Tarefa não encontrada. Tente novamente.");
+            Thread.Sleep(1000);
+
+            AtualizaTarefa();
+            return;
+        }
+
+        Console.Write($"Agora escreva uma nova descrição para a tarefa {idProjeto}: ");
+        string novaDescricao = Console.ReadLine();
+
+        //Está pegando a posição que corresponde ao index e sobrescrenvendo a antiga descrição pela nova descrição (mantem o idProjeto)
+        list[index] = Tuple.Create(idProjeto, novaDescricao);
+        Console.WriteLine("Tarefa atualizada com sucesso!");
+        Thread.Sleep(1500);
+        GerenciadorTarefas();
+    }
+
+    static void ExcluiTarefa() {
+        if(list.Count == 0) {
+            Console.WriteLine("Ainda sem tarefas. Cadastre uma tarefa para excluir.");
+            Thread.Sleep(1500);
+
+            GerenciadorTarefas();
+            return;
+        }
+
+        Console.Write("Digite o id da tarefa que você deseja excluir: ");
         int idProjeto = int.Parse(Console.ReadLine());
 
         var tarefaParaRemover = list.FirstOrDefault(t => t.Item1 == idProjeto);

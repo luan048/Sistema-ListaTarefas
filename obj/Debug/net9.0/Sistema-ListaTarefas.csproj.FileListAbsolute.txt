@@ -12,3 +12,4 @@ C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\ob
 C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.pdb
 C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.genruntimeconfig.cache
 C:\Users\luanm\onedrive\documentos\códigos\computação\Sistema-ListaTarefas\obj\Debug\net9.0\ref\Sistema-ListaTarefas.dll
+C:\Users\luanm\OneDrive\Documentos\Códigos\Computação\Sistema-ListaTarefas\obj\Debug\net9.0\Sistema-ListaTarefas.sourcelink.json

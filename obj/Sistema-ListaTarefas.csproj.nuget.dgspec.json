@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luanm\\onedrive\\documentos\\códigos\\computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj": {}
+    "C:\\Users\\luanm\\OneDrive\\Documentos\\Códigos\\Computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luanm\\onedrive\\documentos\\códigos\\computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj": {
+    "C:\\Users\\luanm\\OneDrive\\Documentos\\Códigos\\Computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luanm\\onedrive\\documentos\\códigos\\computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj",
+        "projectUniqueName": "C:\\Users\\luanm\\OneDrive\\Documentos\\Códigos\\Computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj",
         "projectName": "Sistema-ListaTarefas",
-        "projectPath": "C:\\Users\\luanm\\onedrive\\documentos\\códigos\\computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj",
+        "projectPath": "C:\\Users\\luanm\\OneDrive\\Documentos\\Códigos\\Computação\\Sistema-ListaTarefas\\Sistema-ListaTarefas.csproj",
         "packagesPath": "C:\\Users\\luanm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luanm\\onedrive\\documentos\\códigos\\computação\\Sistema-ListaTarefas\\obj\\",
+        "outputPath": "C:\\Users\\luanm\\OneDrive\\Documentos\\Códigos\\Computação\\Sistema-ListaTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luanm\\AppData\\Roaming\\NuGet\\NuGet.Config"
